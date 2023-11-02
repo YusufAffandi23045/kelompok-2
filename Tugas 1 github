@@ -1,2 +1,63 @@
-456677
-1
+# Topping Pizza
+frankfurter = 43637
+meat_monsta = 43637
+super_supreme = 43637
+super_supreme_chicken = 43637
+
+# Crust pizza
+pan = 0
+stuffedcrust_cheese = 11818
+stuffedcrust_sausage = 9091
+cheesy_bites = 13636
+crown_crust = 11818
+
+# Input Pesanan Pizza dari Pengguna
+print("Selamat datang di Pizza Hut Delivery!")
+print("Silakan masukkan pesanan pizza Anda.")
+print("")
+
+topping_pizza = None
+while topping_pizza is None:
+    print("Pilihan Topping Pizza, all topping 43.637:")
+    print("1. Frankfurter")
+    print("2. Meat Monsta")
+    print("3. Super Supreme")
+    print("4. Super Supreme Chicken")
+    topping_pizza_input = input("Masukkan nomor pilihan topping pizza Anda: ")
+    if topping_pizza_input == "1":
+        topping_pizza = frankfurter
+    elif topping_pizza_input == "2":
+        topping_pizza = meat_monsta
+    elif topping_pizza_input == "3":
+        topping_pizza = super_supreme
+    elif topping_pizza_input == "4":
+        topping_pizza = super_supreme_chicken
+    else:
+        print("Nomor pilihan tidak valid. Silakan coba lagi.")
+        print("")
+        
+crust_pizza = None
+while crust_pizza is None:
+    print("")
+    print("Pilihan Crust Pizza:")
+    print("1. pan (Rp 0)")
+    print("2. stuffedcrust Cheese (Rp11.818)")
+    print("3. Stuffedcrust Sausage (Rp9.091)")
+    print("4. Cheesy Bites (Rp13.636)")
+    print("5. Crown Crust (Rp11.818)")
+    crust_pizza_input = input("Masukkan nomor pilihan crust pizza Anda: ")
+    if crust_pizza_input == "1":
+        crust_pizza = pan
+        ukuran_pizza = None
+        while ukuran_pizza is None:
+            print("")
+            print("Pilihan Ukuran Pizza:")
+            print("1. personal (Rp0)")
+            print("2. Reguler (Rp57.273)")
+            print("3. Large (Rp89.091)")
+            ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
+            if ukuran_pizza_input == "1":
+                personal = 0
+                ukuran_pizza = personal
+            elif ukuran_pizza_input == "2":
+                regular = 57273
