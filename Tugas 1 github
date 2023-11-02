@@ -61,3 +61,66 @@ while crust_pizza is None:
                 ukuran_pizza = personal
             elif ukuran_pizza_input == "2":
                 regular = 57273
+ukuran_pizza = regular
+            elif ukuran_pizza_input == "3":
+                large = 89091
+                ukuran_pizza = large
+            else:
+                print("Nomor pilihan tidak valid. Silakan coba lagi.")
+                print("")
+    elif crust_pizza_input == "2":
+        crust_pizza = stuffedcrust_cheese
+        ukuran_pizza = None
+        while ukuran_pizza is None:
+            print("")
+            print("Pilihan Ukuran Pizza:")
+            print("1. personal (Rp0)")
+            print("2. Reguler (Rp65.455)")
+            print("3. Large (Rp104.545)")
+            ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
+            if ukuran_pizza_input == "1":
+                personal = 0
+                ukuran_pizza = personal
+            elif ukuran_pizza_input == "2":
+                regular = 65455
+                ukuran_pizza = regular
+            elif ukuran_pizza_input == "3":
+                large = 104545
+                ukuran_pizza = large
+            else:
+                print("Nomor pilihan tidak valid. Silakan coba lagi.")
+                print("")
+
+    elif crust_pizza_input == "3":
+        crust_pizza = stuffedcrust_sausage
+        ukuran_pizza = None
+        while ukuran_pizza is None:
+            print("")
+            print("Pilihan Ukuran Pizza:")
+            print("1. personal (Rp0)")
+            print("2. Reguler (Rp64.545)")
+            print("3. Large (Rp102.727)")
+            ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
+            if ukuran_pizza_input == "1":
+                personal = 0
+                ukuran_pizza = personal
+            elif ukuran_pizza_input == "2":
+                regular = 64545
+                ukuran_pizza = regular
+            elif ukuran_pizza_input == "3":
+                large = 102727
+                ukuran_pizza = large
+            else:
+                print("Nomor pilihan tidak valid. Silakan coba lagi.")
+                print("")
+    elif crust_pizza_input == "4":
+        crust_pizza = cheesy_bites
+        ukuran_pizza = None
+        while ukuran_pizza is None:
+            print("")
+            print("Pilihan Ukuran Pizza:")
+            print("1. personal (Rp0)")
+            print("2. Reguler (Rp66.364)")
+            print("3. Large (Rp107.273)")
+            ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
+            if ukuran_pizza_input == "1":
