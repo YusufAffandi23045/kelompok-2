@@ -124,3 +124,66 @@ ukuran_pizza = regular
             print("3. Large (Rp107.273)")
             ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
             if ukuran_pizza_input == "1":
+personal = 0
+                ukuran_pizza = personal
+            elif ukuran_pizza_input == "2":
+                regular = 66364
+                ukuran_pizza = regular
+            elif ukuran_pizza_input == "3":
+                large = 107273
+                ukuran_pizza = large
+            else:
+                print("Nomor pilihan tidak valid. Silakan coba lagi.")
+                print("")
+    elif crust_pizza_input == "5":
+        crust_pizza = crown_crust
+        ukuran_pizza = None
+        while ukuran_pizza is None:
+            print("")
+            print("Pilihan Ukuran Pizza:")
+            print("1. personal (Rp0)")
+            print("2. Reguler (Rp65.455)")
+            print("3. Large (Rp104.545)")
+            ukuran_pizza_input = input("Masukkan nomor pilihan ukuran pizza Anda: ")
+            if ukuran_pizza_input == "1":
+                personal = 0
+                ukuran_pizza = personal
+            elif ukuran_pizza_input == "2":
+                regular = 65455
+                ukuran_pizza = regular
+            elif ukuran_pizza_input == "3":
+                large = 104545
+                ukuran_pizza = large
+            else:
+                print("Nomor pilihan tidak valid. Silakan coba lagi.")
+                print("")
+    else:
+        print("Nomor pilihan tidak valid. Silakan coba lagi.")
+        print("")
+        
+cheese_tambahan_input = input("Apakah Anda ingin menambahkan cheese? (y/n): ")
+if cheese_tambahan_input.lower() == "y":
+    if ukuran_pizza_input == "1":
+        cheese_tambahan = 13636
+    elif ukuran_pizza_input == "2":
+        cheese_tambahan = 16364
+    elif ukuran_pizza_input == "3":
+        cheese_tambahan = 19091
+    else:
+        cheese_tambahan = 0
+else:
+    cheese_tambahan = 0
+
+# Total Harga Pesanan Pizza dan Struk Pesanan Pizza 
+total_harga_pesanan_pizza = topping_pizza + crust_pizza + ukuran_pizza + cheese_tambahan
+#struk pembelian pizza
+print("")
+print("Struk Pesanan Pizza")
+print(f"Topping Pizza : {topping_pizza}")
+print(f"Crust Pizza : {crust_pizza}")
+print(f"Ukuran Pizza : {ukuran_pizza}")
+print(f"Tambahan Cheese : {cheese_tambahan}")
+print(f"Total Harga Pesanan Pizza : {total_harga_pesanan_pizza}")
+# Terima kasih telah memilih Pizza Hut Delivery!
+print("")
+print("Terima kasih telah memilih Pizza Hut Delivery!")
